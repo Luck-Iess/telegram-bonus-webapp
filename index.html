@@ -9,15 +9,23 @@
 <body>
   <div class="container">
     <h1>Проверка бонусов</h1>
-    <h6>V 1.05</h6>
+    <h6>V 1.06</h6>
 
     <form id="loginForm">
       <input type="text" id="phone" placeholder="Введите номер телефона" required />
-      <input type="text" id="key" placeholder="Введите ключ доступа" required />
+
+      <div style="position: relative;">
+        <input type="password" id="key" placeholder="Введите ключ доступа" required style="padding-right: 90px;" />
+        <button type="button" id="toggleKey" style="position: absolute; right: 0; top: 0; height: 100%; padding: 0 10px;">👁️</button>
+      </div>
+
       <button type="submit">Войти</button>
     </form>
 
-    <div id="result"></div>
+    <div id="loading" class="spinner" style="display:none;"></div>
+
+    <div id="result" style="display:none;"></div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
