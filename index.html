@@ -12,12 +12,14 @@
     <h6>V 1.06</h6>
 
     <form id="loginForm">
+    <div style="max-width: 300px; margin: 10px auto;">
       <input type="text" id="phone" placeholder="Введите номер телефона" required />
+    </div>
 
-      <div style="position: relative;">
-        <input type="password" id="key" placeholder="Введите ключ доступа" required style="padding-right: 90px;" />
-        <button type="button" id="toggleKey" style="position: absolute; right: 0; top: 0; height: 100%; padding: 0 10px;">👁️</button>
-      </div>
+    <div class="key-wrapper">
+      <input type="password" id="key" placeholder="Введите ключ доступа" required />
+      <button type="button" id="toggleKey">👁️</button>
+    </div>
 
       <button type="submit">Войти</button>
     </form>

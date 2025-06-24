@@ -18,14 +18,14 @@ h6 {
 }
 input {
     display: block;
-    width: 100%;
+    width: 92.5%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
 button {
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
     padding: 10px;
     background-color: #1d4ed8;
@@ -58,4 +58,32 @@ button {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.key-wrapper {
+  width: 300px;
+  display: flex;
+  gap: 8px; /* Расстояние между полем и кнопкой */
+  margin: 10px auto;
+}
+
+.key-wrapper input {
+  flex: 5;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.key-wrapper button {
+  flex: 1   ;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
 
