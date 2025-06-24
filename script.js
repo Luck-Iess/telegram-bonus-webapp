@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function normalizePhone(phone) {
-        return phone.replace(/[^0-9]/g, "").replace(/^8/, "7");
+        return String(phone).replace(/[^0-9]/g, "").replace(/^8/, "7");
     }
 });
